@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~assets/*": [
+        "src/assets/*"
+      ],
+      "~components/*": [
+        "src/components/*"
+      ],
+      "~pages/*": [
+        "src/pages/*"
+      ],
+      "~/*": [
+        "src/*"
+      ],
+      "~services/*": [
+        "src/services/*"
+      ],
+      "~store/*": [
+        "src/store/*"
+      ],
+      "~hooks/*": [
+        "src/hooks/*"
+      ],
+      "~AlertStack/*": [
+        "src/AlertStack/*"
+      ],
+      "~LikePage/*": [
+        "src/pages/LikePage/*"
+      ],
+      "~LikedProduct.jsx/*": [
+        "src/components/LikedProduct.jsx/*"
+      ],
+      "~LikedProduct/*": [
+        "src/components/LikedProduct/*"
+      ],
+      "~LikedProducts/*": [
+        "src/components/LikedProducts/*"
+      ],
+      "~CartProduct/*": [
+        "src/components/CartProduct/*"
+      ],
+      "~CartSummary/*": [
+        "src/components/CartSummary/*"
+      ],
+      "~PaymentComponents/*": [
+        "src/PaymentComponents/*"
+      ],
+      "~PaymentComponent/*": [
+        "src/components/PaymentComponent/*"
+      ],
+      "~ClosestUpdate/*": [
+        "src/components/ClosestUpdate/*"
+      ],
+      "~Navbar/*": [
+        "src/components/Navbar/*"
+      ],
+      "~Data/*": [
+        "src/Data/*"
+      ],
+      "~LifeStations/*": [
+        "src/components/LifeStations/*"
+      ],
+      "~ObituariesSection/*": [
+        "src/ObituariesSection/*"
+      ],
+      "~Footer/*": [
+        "src/components/Footer/*"
+      ],
+      "~Gallery/*": [
+        "src/components/Gallery/*"
+      ],
+      "~DefaultLayout/*": [
+        "src/components/DefaultLayout/*"
+      ]
+    }
+  }
+}
