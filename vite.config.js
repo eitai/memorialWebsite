@@ -12,4 +12,15 @@ export default defineConfig({
     }),
     eslintPlugin(),
   ],
+  rollupOptions: {
+    external: [
+      'react',
+      'nonid',
+      'polished',
+      'react-dom',
+      'react-router-dom',
+      'sytled-components',
+      'vite-plugin-svgr',
+    ],
+  },
 });
