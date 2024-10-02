@@ -11,5 +11,5 @@ export default defineConfig({
     }),
     eslintPlugin(),
   ],
-  base: '/FRONT',
+  base: '/memorialWebsite/',
 });
