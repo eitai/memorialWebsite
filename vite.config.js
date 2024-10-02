@@ -4,6 +4,7 @@ import { ViteAliases } from 'vite-aliases';
 import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineConfig({
+  base: '/memorialWebsite/',
   plugins: [
     react(),
     ViteAliases({
@@ -11,5 +12,4 @@ export default defineConfig({
     }),
     eslintPlugin(),
   ],
-  base: '/memorialWebsite/',
 });
