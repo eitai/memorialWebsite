@@ -21,5 +21,6 @@ module.exports = {
       'warn',
       { vars: 'all', args: 'none', ignoreRestSiblings: true },
     ],
+    'no-debugger': 'off',
   },
 };

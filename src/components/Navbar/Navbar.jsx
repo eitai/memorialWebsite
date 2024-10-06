@@ -1,21 +1,27 @@
 import { css } from '@emotion/css';
 import { pages } from '~/Data/pages';
 import { FaCalendarCheck } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const getPageLocation = () => {
+    if (location.pathname === '/') return '/';
+    return location.pathname.slice(1);
+  };
 
   return (
     <div className={containerStyle}>
       <div className={pagesWrapperStyle}>
         {pages.map((page) => {
-          const isCurrentPage = page === pages[0];
+          const isCurrentPage = getPageLocation({ page }) === page.key;
           return (
             <button
               className={pageStyle(isCurrentPage)}
               key={page.key}
-              onClick={() => navigate(page.key)}>
+              onClick={() => !isCurrentPage && navigate(page.key)}>
               {page.name}
             </button>
           );
