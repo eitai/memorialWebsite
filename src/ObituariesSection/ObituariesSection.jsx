@@ -33,8 +33,8 @@ export const ObituariesSection = () => {
                     <div>{howRelated}</div>
                   </div>
                 </div>
-                <div>{obituarieText}</div>
-                <div>
+                <div className={obituarieTextWrapperStyle}>{obituarieText}</div>
+                <div className={btnWrapperStyle}>
                   <button>להספד המלא</button>
                   <FaArrowAltCircleLeft />
                 </div>
@@ -46,6 +46,27 @@ export const ObituariesSection = () => {
     </div>
   );
 };
+
+const obituarieTextWrapperStyle = css`
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal;
+`;
+
+const btnWrapperStyle = css`
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  > svg {
+    font-size: 18px;
+  }
+`;
 
 const nameWrapperStyle = css`
   display: flex;

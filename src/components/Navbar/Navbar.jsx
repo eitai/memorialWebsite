@@ -7,16 +7,11 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const getPageLocation = () => {
-    if (location.pathname === '/') return '/';
-    return location.pathname.slice(1);
-  };
-
   return (
     <div className={containerStyle}>
       <div className={pagesWrapperStyle}>
         {pages.map((page) => {
-          const isCurrentPage = getPageLocation({ page }) === page.key;
+          const isCurrentPage = location.pathname === page.key;
           return (
             <button
               className={pageStyle(isCurrentPage)}
@@ -72,7 +67,7 @@ const pageStyle = (isCurrentPage) => css`
   border-radius: 8px 8px 0.5px 0.5px;
   opacity: 0px;
   transition: all 0.1s ease-in;
-  background-color: ${isCurrentPage && '#f4fbff'};
+  background-color: ${isCurrentPage && '#daeffb'};
   &:hover {
     background-color: ${isCurrentPage ? '#e3e9ee' : '#f4fbff'};
   }

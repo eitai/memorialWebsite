@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { useEffect, useState } from 'react';
 import { DefaultLayout } from '~components/DefaultLayout/DefaultLayout';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
-import { GalleryPopup } from './GalleryPopup';
+import { GalleryPopup } from '../components/GalleryPopup/GalleryPopup';
 
 //NOTE: when a new gallery folder added need to add a key below by the name of the folder
 const GalleryKeysByFolder = {
